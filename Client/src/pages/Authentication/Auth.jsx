@@ -27,7 +27,7 @@ const Auth = () => {
 
     // }
     if(isSignUp){
-      data.password===data.confirmpass
+      data.password!==data.confirmpass
       ? dispatch(signUp(data))
       : setConfirmPass(false)
     }else{

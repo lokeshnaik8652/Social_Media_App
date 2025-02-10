@@ -9,6 +9,9 @@ export const updateUser=(id,formData)=>async(dispatch)=>{
     } catch (error) {
         dispatch({type:"UPDATING_FAIL"})
     }
+
+
+    
 }
 
 export const followUser=(id,data)=>async(dispatch)=>{
