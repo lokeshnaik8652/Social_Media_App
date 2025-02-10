@@ -10,7 +10,7 @@ const Auth = () => {
   const loading=useSelector((state)=>state.authReducer.loading)
   const [isSignUp,setIsSignUp]=useState(true)
   console.log(loading);
-  const [data,setData]=useState({firstname:"",lastname:"",username:"",password:"",confirmpass:""})
+  const [data,setData]=useState({firstname:"",lastname:"",username:"",password:"",confirmpass:"",middlename:"",})
   const [confirmPass,setConfirmPass]=useState(true)
 
   const handleChange=(e)=>{
@@ -66,6 +66,10 @@ const Auth = () => {
           type="text" 
           placeholder='Last Name' name="lastname" id="" className='infoInput' onChange={handleChange} value
           ={data.lastname}/>
+            <input 
+          type="text" 
+          placeholder='Middle Name' name="Middlename" id="" className='infoInput' onChange={handleChange} value
+          ={data.middlename}/>
         </div>
         )}
         
